@@ -1,0 +1,10 @@
+{
+  "name": "mongolesson1",
+  "version": "1.0.0",
+  "main": "cats.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  }
+}
