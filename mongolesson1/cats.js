@@ -10,14 +10,14 @@ var catSchema = new mongoose.Schema({
 var Cat = mongoose.model("Cat" , catSchema);
  //adding a new cat to the DB
 
- var george = new Cat({
+ /* var george = new Cat({
                  name: "Cici",
                  age: 2,
                  temperament: "Grougcy"
 
- });
+ }); */
 
- george.save(function (err , cat ){
+ /* george.save(function (err , cat ){
      if (err){
          console.log("SOMETHING WENT WRONG!");
      }
@@ -25,4 +25,19 @@ var Cat = mongoose.model("Cat" , catSchema);
          console.log("WE JUST SAVED A CAT TO THE DB");
          console.log(cat);
      }
+ }); */
+
+ Cat.find({} , function(err, cats){
+     if(err){
+         console.log("OH NO, ERROR!");
+         console.log(err);
+     }
+     else {
+        console.log("ALL THE CATS...");
+        console.log(cats);
+     }
  });
+
+
+ //retrieve cats
+
